@@ -1,5 +1,6 @@
-# three
+# Mallorca Trip Itinerary
 
-A tiny static website where the word "three" drifts like bubbles.
+A static schedule and itinerary website built from `dates-for-bot`.
 
-Open `index.html` in a browser or serve this folder with any static file server.
+It includes all-days, day-by-day, event-focused, and map-focused views for the
+10-14 Aug 2026 Mallorca and Andorra trip.
