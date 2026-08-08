@@ -3,26 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mallorca Trip Itinerary</title>
+    <title>Judge Europe Trip</title>
     <meta
       name="description"
-      content="A mobile-friendly Mallorca and Andorra trip itinerary with day filters, schedule, and map links."
+      content="Judge Europe Trip itinerary with day filters, activity notes, map links, and the Andorra Wikiloc route."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="hero">
       <nav class="topnav" aria-label="Trip sections">
-        <a href="#map">Map</a>
         <a href="#days">Days</a>
       </nav>
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">10-15 Aug 2026</p>
-          <h1>Mallorca, then Andorra</h1>
+          <p class="eyebrow">10-17 Aug 2026</p>
+          <h1>Judge Europe Trip</h1>
           <p class="lede">
-            Beach evenings, mountain villages, the Sóller train, a boat for the
-            eclipse, and a clean transfer through Barcelona into Andorra.
+            Mallorca beach evenings, mountain villages, the Sóller train, an
+            eclipse boat, Andorra plans, and a Madrid send-off.
           </p>
         </div>
       </div>
@@ -37,68 +36,8 @@
         <button class="filter-button" type="button" data-filter="day-13">13 Aug</button>
         <button class="filter-button" type="button" data-filter="day-14">14 Aug</button>
         <button class="filter-button" type="button" data-filter="day-15">15 Aug</button>
-      </section>
-
-      <section class="map-panel" id="map" aria-label="Trip map">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Map</p>
-            <h2>Follow the route</h2>
-          </div>
-          <a class="map-link" href="https://www.google.com/maps/dir/Palma+de+Mallorca+Airport/Zoetry+Mallorca/Palma/S%C3%B3ller/Dei%C3%A0/Valldemossa/Mhares+Sea+Club/Port+d%27Andratx/Fornalutx/Barcelona/La+Massana+Andorra/Centric+Atiram+Hotel+Andorra" target="_blank" rel="noreferrer">Open route</a>
-        </div>
-        <div class="map-stage">
-          <iframe
-            title="Map covering Mallorca, Barcelona, and Andorra trip locations"
-            src="https://maps.google.com/maps?q=Palma%20S%C3%B3ller%20Dei%C3%A0%20Valldemossa%20Port%20d%27Andratx%20Fornalutx%20Barcelona%20Andorra&t=&z=6&ie=UTF8&iwloc=&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div class="map-events" aria-label="Map event focus">
-            <a data-day="day-10" href="https://www.google.com/maps/search/?api=1&query=Palma+de+Mallorca+Airport" target="_blank" rel="noreferrer">
-              <span>10</span> PMI arrival
-            </a>
-            <a data-day="day-10" href="https://www.google.com/maps/search/?api=1&query=Zoetry+Mallorca" target="_blank" rel="noreferrer">
-              <span>10</span> Zoëtry dinner
-            </a>
-            <a data-day="day-11" href="https://www.google.com/maps/search/?api=1&query=Tren+de+Soller+Palma" target="_blank" rel="noreferrer">
-              <span>11</span> Sóller train
-            </a>
-            <a data-day="day-11" href="https://www.google.com/maps/search/?api=1&query=Dei%C3%A0+Mallorca" target="_blank" rel="noreferrer">
-              <span>11</span> Deià lunch
-            </a>
-            <a data-day="day-11" href="https://www.google.com/maps/search/?api=1&query=Valldemossa+Mallorca" target="_blank" rel="noreferrer">
-              <span>11</span> Valldemossa
-            </a>
-            <a data-day="day-11" href="https://www.google.com/maps/search/?api=1&query=Mhares+Sea+Club+Mallorca" target="_blank" rel="noreferrer">
-              <span>11</span> Mhares swim
-            </a>
-            <a data-day="day-12" href="https://www.google.com/maps/search/?api=1&query=Palma+Cathedral" target="_blank" rel="noreferrer">
-              <span>12</span> Palma cathedral
-            </a>
-            <a data-day="day-12" href="https://www.google.com/maps/search/?api=1&query=Port+d%27Andratx" target="_blank" rel="noreferrer">
-              <span>12</span> Andratx boat
-            </a>
-            <a data-day="day-12" href="https://www.google.com/maps/search/?api=1&query=Mol%C3%AD+Can+Pere+Mallorca" target="_blank" rel="noreferrer">
-              <span>12</span> Molí C'an Pere
-            </a>
-            <a data-day="day-13" href="https://www.google.com/maps/search/?api=1&query=Fornalutx+Mallorca" target="_blank" rel="noreferrer">
-              <span>13</span> Fornalutx
-            </a>
-            <a data-day="day-14" href="https://www.google.com/maps/search/?api=1&query=Borda+Xixerella+La+Massana+Andorra" target="_blank" rel="noreferrer">
-              <span>14</span> Borda Xixerella
-            </a>
-            <a data-day="day-14" href="https://www.google.com/maps/search/?api=1&query=Centric+Atiram+Hotel+Andorra" target="_blank" rel="noreferrer">
-              <span>14</span> Centric Andorra
-            </a>
-            <a data-day="day-15" href="https://www.google.com/maps/search/?api=1&query=Pont+Tibet%C3%A0+Canillo+Andorra" target="_blank" rel="noreferrer">
-              <span>15</span> Tibetan bridge
-            </a>
-            <a data-day="day-15" href="https://www.google.com/maps/search/?api=1&query=Tobotronc+Naturland+Andorra" target="_blank" rel="noreferrer">
-              <span>15</span> Tobotronc
-            </a>
-          </div>
-        </div>
+        <button class="filter-button" type="button" data-filter="day-16">16 Aug</button>
+        <button class="filter-button" type="button" data-filter="day-17">17 Aug</button>
       </section>
 
       <section class="content-stack" id="days">
@@ -108,21 +47,22 @@
               <p class="eyebrow">Monday</p>
               <h2>10 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/dir/Palma+de+Mallorca+Airport/Zoetry+Mallorca" target="_blank" rel="noreferrer">Day route</a>
           </div>
           <ol class="timeline">
             <li>
               <time>20:00</time>
               <div>
-                <strong>Arrive at Palma de Mallorca Airport</strong>
+                <strong><span class="emoji">🛬</span> Arrive at Palma de Mallorca Airport</strong>
                 <p>Land at PMI and transfer toward the hotel.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Palma+de+Mallorca+Airport" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>21:00</time>
               <div>
-                <strong>Drinks and dinner at Zoëtry Mallorca</strong>
+                <strong><span class="emoji">🍷</span> Drinks and dinner at Zoëtry Mallorca</strong>
                 <p>Easy arrival night: check in, settle, and keep dinner close.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Zoetry+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
           </ol>
@@ -134,55 +74,59 @@
               <p class="eyebrow">Tuesday</p>
               <h2>11 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/dir/Palma/Port+de+Soller/Dei%C3%A0/Valldemossa/Mhares+Sea+Club" target="_blank" rel="noreferrer">Day route</a>
           </div>
           <ol class="timeline">
             <li>
               <time>08:00</time>
               <div>
-                <strong>Typical Spanish breakfast</strong>
+                <strong><span class="emoji">🥐</span> Typical Spanish breakfast</strong>
                 <p>A slow start before the west-coast loop.</p>
               </div>
             </li>
             <li>
               <time>09:00</time>
               <div>
-                <strong>Leave for Palma</strong>
+                <strong><span class="emoji">🚗</span> Leave for Palma</strong>
                 <p>Minor tourism by car on the way to the station.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Palma+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>10:10</time>
               <div>
-                <strong>Wooden train to Sóller</strong>
+                <strong><span class="emoji">🚂</span> Wooden train to Sóller</strong>
                 <p>The vintage railway climb from Palma toward the Sóller valley.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Tren+de+Soller+Palma" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>14:00</time>
               <div>
-                <strong>Lunch reservation in Deià</strong>
+                <strong><span class="emoji">🍽️</span> Lunch reservation in Deià</strong>
                 <p>Mountain village lunch with time for terraces and views.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Dei%C3%A0+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>17:00</time>
               <div>
-                <strong>Traditional ice cream in Valldemossa</strong>
+                <strong><span class="emoji">🍦</span> Valldemossa traditional ice cream</strong>
                 <p>A clean pause before the evening drive south.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Valldemossa+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>20:00</time>
               <div>
-                <strong>Sunset swim and drinks at Mhares</strong>
+                <strong><span class="emoji">🏊</span> Sunset swim and drinks at Mhares</strong>
                 <p>Sea-club stop for golden hour.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Mhares+Sea+Club+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>21:00</time>
               <div>
-                <strong>Dinner at the house</strong>
+                <strong><span class="emoji">🏠</span> Dinner at the house</strong>
                 <p>Close the loop back at base.</p>
               </div>
             </li>
@@ -195,49 +139,52 @@
               <p class="eyebrow">Wednesday</p>
               <h2>12 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/dir/Palma+Cathedral/Port+d%27Andratx/Mol%C3%AD+Can+Pere+Mallorca" target="_blank" rel="noreferrer">Day route</a>
           </div>
           <ol class="timeline">
             <li>
               <time>09:00</time>
               <div>
-                <strong>Leave for Palma</strong>
+                <strong><span class="emoji">⛪</span> Leave for Palma cathedral area</strong>
                 <p>Plan to be around the cathedral area.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Palma+Cathedral" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>13:00</time>
               <div>
-                <strong>Car ride to Andratx</strong>
+                <strong><span class="emoji">🚗</span> Car ride to Andratx</strong>
                 <p>Leave early because roads are expected to close.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Andratx+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>18:00</time>
               <div>
-                <strong>Boat reservation starts at Port d'Andratx</strong>
+                <strong><span class="emoji">⛵</span> Boat reservation starts at Port d'Andratx</strong>
                 <p>Board before the eclipse window and keep the evening simple.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Port+d%27Andratx" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li class="eclipse">
               <time>20:00</time>
               <div>
-                <strong>Total eclipse of my sun</strong>
+                <strong><span class="emoji">🌑</span> Total eclipse of my sun</strong>
                 <p>Be on the water, settled, and not still looking for parking.</p>
               </div>
             </li>
             <li>
               <time>21:30</time>
               <div>
-                <strong>Finish the boat ride</strong>
+                <strong><span class="emoji">⛵</span> Finish the boat ride</strong>
                 <p>Allow time to disembark before the late dinner drive.</p>
               </div>
             </li>
             <li>
               <time>22:15</time>
               <div>
-                <strong>Dinner at Molí C'an Pere</strong>
+                <strong><span class="emoji">🍽️</span> Dinner at Molí C'an Pere</strong>
                 <p>Long drive there, but close to the house after dinner.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Mol%C3%AD+Can+Pere+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
           </ol>
@@ -249,27 +196,27 @@
               <p class="eyebrow">Thursday</p>
               <h2>13 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Fornalutx+Mallorca" target="_blank" rel="noreferrer">Fornalutx map</a>
           </div>
           <ol class="timeline">
             <li>
               <time>11:00</time>
               <div>
-                <strong>Olive tour at Fornalutx</strong>
+                <strong><span class="emoji">🫒</span> Olive tour at Fornalutx</strong>
                 <p>A mountain-town morning in the Sóller valley.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Fornalutx+Mallorca" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>13:00</time>
               <div>
-                <strong>Wine tasting</strong>
+                <strong><span class="emoji">🍷</span> Wine tasting</strong>
                 <p>Keep the afternoon local and unhurried after the olive tour.</p>
               </div>
             </li>
             <li>
               <time>19:00</time>
               <div>
-                <strong>Dinner with Merche</strong>
+                <strong><span class="emoji">🍽️</span> Dinner with Merche</strong>
                 <p>Expected: Merche, Sebastian "Uncle", Marta, and Nuria "baby".</p>
               </div>
             </li>
@@ -282,42 +229,54 @@
               <p class="eyebrow">Friday</p>
               <h2>14 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/dir/Palma+de+Mallorca+Airport/Barcelona/Borda+Xixerella+La+Massana/Centric+Atiram+Hotel+Andorra" target="_blank" rel="noreferrer">Day route</a>
           </div>
           <ol class="timeline">
             <li>
               <time>07:45</time>
               <div>
-                <strong>Depart PMI to BCN on FR1343</strong>
+                <strong><span class="emoji">✈️</span> Depart PMI to BCN on FR1343</strong>
                 <p>Early flight from Palma de Mallorca Airport.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Palma+de+Mallorca+Airport" target="_blank" rel="noreferrer">PMI map</a>
               </div>
             </li>
             <li>
               <time>10:00</time>
               <div>
-                <strong>Arrive in Barcelona</strong>
+                <strong><span class="emoji">🧳</span> Arrive in Barcelona</strong>
                 <p>Collect bags and move into transfer mode.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Barcelona+Airport" target="_blank" rel="noreferrer">BCN map</a>
               </div>
             </li>
             <li>
               <time>13:30</time>
               <div>
-                <strong>Lunch at Borda Xixerella, La Massana</strong>
+                <strong><span class="emoji">🍽️</span> Lunch at Borda Xixerella, La Massana</strong>
                 <p>Andorra lunch stop after the Barcelona transfer.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Borda+Xixerella+La+Massana+Andorra" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>17:00</time>
               <div>
-                <strong>Hotel check-in at Centric Andorra</strong>
+                <strong><span class="emoji">🏨</span> Hotel check-in at Centric Andorra</strong>
                 <p>Drop bags, reset, and head out for an easy evening.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Centric+Atiram+Hotel+Andorra" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>Evening</time>
               <div>
-                <strong>Walk around Andorra and easy dinner</strong>
+                <strong><span class="emoji">🏢</span> Exclusive tour, Messi Family Office</strong>
+                <p>New stop from the updated plan.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Messi+Family+Office+Andorra" target="_blank" rel="noreferrer">Map</a>
+              </div>
+            </li>
+            <li>
+              <time>Evening</time>
+              <div>
+                <strong><span class="emoji">🚶</span> Walk around Andorra and easy dinner</strong>
                 <p>No hard booking; keep it flexible after the travel day.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Andorra+la+Vella" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
           </ol>
@@ -329,35 +288,101 @@
               <p class="eyebrow">Saturday</p>
               <h2>15 Aug</h2>
             </div>
-            <a class="map-link" href="https://www.google.com/maps/dir/Centric+Atiram+Hotel+Andorra/Pont+Tibet%C3%A0+Canillo/Tobotronc+Naturland" target="_blank" rel="noreferrer">Day route</a>
           </div>
           <ol class="timeline">
             <li>
               <time>Morning</time>
               <div>
-                <strong>Andorra hike and Tibetan bridge</strong>
-                <p>Mountain day with the bridge as the first anchor.</p>
+                <strong><span class="emoji">🥾</span> Andorra hike, Tibetan bridge, or Tristaina lakes</strong>
+                <p>Mountain day with either the bridge or the Wikiloc route as the first anchor.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Pont+Tibet%C3%A0+Canillo+Andorra" target="_blank" rel="noreferrer">Bridge map</a>
+                <a class="activity-link" href="https://ca.wikiloc.com/rutes-senderisme/circular-estanys-de-tristaina-18804312" target="_blank" rel="noreferrer">Wikiloc</a>
               </div>
             </li>
             <li>
               <time>Midday</time>
               <div>
-                <strong>Tobotronc</strong>
+                <strong><span class="emoji">🎢</span> Tobotronc, world's longest alpine slide</strong>
                 <p>Leave enough buffer for queues and weather.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Tobotronc+Naturland+Andorra" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
               <time>Afternoon</time>
               <div>
-                <strong>Jewellery store look-up</strong>
+                <strong><span class="emoji">💍</span> Jewellery store look-up</strong>
                 <p>Keep this as a flexible city stop.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=luxury+jewelry+Andorra+la+Vella" target="_blank" rel="noreferrer">Map</a>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="day-card" data-day="day-16">
+          <div class="day-head">
+            <div>
+              <p class="eyebrow">Sunday</p>
+              <h2>16 Aug</h2>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time>Day</time>
+              <div>
+                <strong><span class="emoji">🏘️</span> Andorra villages check</strong>
+                <p>Use the open day for nearby villages and whatever feels easy.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Andorra+villages" target="_blank" rel="noreferrer">Map</a>
               </div>
             </li>
             <li>
-              <time>Later</time>
+              <time>Day</time>
               <div>
-                <strong>Andorra villages check</strong>
-                <p>Use whatever time is left for nearby villages before dinner.</p>
+                <strong><span class="emoji">🗓️</span> Free plan</strong>
+                <p>Keep the day loose before the evening departure.</p>
+              </div>
+            </li>
+            <li>
+              <time>20:00</time>
+              <div>
+                <strong><span class="emoji">🚗</span> Leave Andorra</strong>
+                <p>Evening drive out of Andorra.</p>
+                <a class="activity-link" href="https://www.google.com/maps/dir/Andorra/Madrid" target="_blank" rel="noreferrer">Map</a>
+              </div>
+            </li>
+            <li>
+              <time>Dinner</time>
+              <div>
+                <strong><span class="emoji">🍽️</span> Dinner at Barajas or Torquemada</strong>
+                <p>Choose the stop based on timing and appetite.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Barajas+Madrid+restaurants" target="_blank" rel="noreferrer">Barajas map</a>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Torquemada+Spain+restaurants" target="_blank" rel="noreferrer">Torquemada map</a>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="day-card" data-day="day-17">
+          <div class="day-head">
+            <div>
+              <p class="eyebrow">Monday</p>
+              <h2>17 Aug</h2>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time>Morning</time>
+              <div>
+                <strong><span class="emoji">☕</span> Madrid traditional breakfast</strong>
+                <p>Final morning before departure.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=traditional+breakfast+Madrid" target="_blank" rel="noreferrer">Map</a>
+              </div>
+            </li>
+            <li>
+              <time>13:00</time>
+              <div>
+                <strong><span class="emoji">✈️</span> Kevin departs</strong>
+                <p>Departure window at 1pm.</p>
+                <a class="activity-link" href="https://www.google.com/maps/search/?api=1&query=Adolfo+Su%C3%A1rez+Madrid+Barajas+Airport" target="_blank" rel="noreferrer">Airport map</a>
               </div>
             </li>
           </ol>
@@ -368,7 +393,6 @@
     <script>
       const buttons = document.querySelectorAll(".filter-button");
       const dayCards = document.querySelectorAll(".day-card");
-      const mapEvents = document.querySelectorAll(".map-events a");
 
       function setFilter(filter) {
         buttons.forEach((button) => {
@@ -377,10 +401,6 @@
 
         dayCards.forEach((card) => {
           card.hidden = filter !== "all" && card.dataset.day !== filter;
-        });
-
-        mapEvents.forEach((event) => {
-          event.classList.toggle("muted", filter !== "all" && event.dataset.day !== filter);
         });
       }
 

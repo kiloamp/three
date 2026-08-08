@@ -4,7 +4,6 @@
   --muted: #697783;
   --bg: #f3efe8;
   --paper: #fffdf8;
-  --paper-soft: #f9f4ea;
   --line: #ded4c4;
   --olive: #536b3f;
   --sea: #2c7c89;
@@ -92,7 +91,7 @@ h2 {
 }
 
 h1 {
-  max-width: 860px;
+  max-width: 900px;
   font-size: clamp(3.2rem, 9vw, 8.4rem);
   line-height: 0.9;
 }
@@ -103,7 +102,7 @@ h2 {
 }
 
 .lede {
-  max-width: 740px;
+  max-width: 760px;
   margin: 18px 0 0;
   color: rgba(255, 253, 248, 0.9);
   font-size: clamp(1rem, 2vw, 1.24rem);
@@ -144,105 +143,17 @@ main {
   background: var(--night);
 }
 
-.map-panel,
-.day-card {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 253, 248, 0.94);
-  box-shadow: var(--shadow);
-}
-
-.map-panel {
-  margin-bottom: 18px;
-  padding: 18px;
-}
-
-.section-head,
-.day-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.map-link {
-  flex: 0 0 auto;
-  border: 1px solid rgba(44, 124, 137, 0.28);
-  border-radius: 999px;
-  padding: 7px 10px;
-  color: #155d68;
-  background: #eaf6f7;
-  font-size: 0.78rem;
-  font-weight: 850;
-  text-decoration: none;
-}
-
-.map-stage {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
-  gap: 14px;
-  align-items: stretch;
-}
-
-.map-stage iframe {
-  width: 100%;
-  min-height: 430px;
-  border: 0;
-  border-radius: 8px;
-  filter: saturate(0.88) contrast(0.98);
-}
-
-.map-events {
-  display: grid;
-  max-height: 430px;
-  gap: 8px;
-  overflow: auto;
-  align-content: start;
-}
-
-.map-events a {
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 10px;
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 10px;
-  color: var(--ink);
-  background: var(--paper-soft);
-  font-size: 0.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  transition: opacity 160ms ease, transform 160ms ease, border-color 160ms ease;
-}
-
-.map-events a:hover {
-  border-color: rgba(44, 124, 137, 0.44);
-  transform: translateY(-1px);
-}
-
-.map-events a.muted {
-  opacity: 0.28;
-}
-
-.map-events span {
-  display: grid;
-  height: 30px;
-  place-items: center;
-  border-radius: 999px;
-  color: #fffdf8;
-  background: var(--sea);
-  font-size: 0.78rem;
-}
-
 .content-stack {
   display: grid;
   gap: 18px;
 }
 
 .day-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
   padding: 18px;
+  background: rgba(255, 253, 248, 0.94);
+  box-shadow: var(--shadow);
 }
 
 .day-card.highlight {
@@ -250,6 +161,14 @@ main {
   background:
     linear-gradient(180deg, rgba(217, 154, 43, 0.12), rgba(255, 253, 248, 0.96) 190px),
     var(--paper);
+}
+
+.day-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 .timeline {
@@ -263,12 +182,12 @@ main {
 .timeline li {
   position: relative;
   display: grid;
-  min-height: 72px;
+  min-height: 78px;
   grid-template-columns: 84px 1fr;
   gap: 14px;
   border-left: 2px solid var(--line);
   margin-left: 36px;
-  padding: 0 0 18px 20px;
+  padding: 0 0 20px 20px;
 }
 
 .timeline li::before {
@@ -300,10 +219,42 @@ main {
   margin: 0;
 }
 
+.timeline strong {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.28;
+}
+
+.emoji {
+  flex: 0 0 auto;
+  width: 1.45em;
+  text-align: center;
+}
+
 .timeline p {
   margin-top: 5px;
   color: var(--muted);
   line-height: 1.48;
+}
+
+.activity-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 7px 0 0;
+  border: 1px solid rgba(44, 124, 137, 0.28);
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: #155d68;
+  background: #eaf6f7;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.activity-link:hover {
+  border-color: rgba(44, 124, 137, 0.55);
+  background: #dff1f4;
 }
 
 .timeline .eclipse::before {
@@ -319,25 +270,6 @@ main {
   display: none !important;
 }
 
-@media (max-width: 1000px) {
-  .topnav {
-    margin-bottom: 110px;
-  }
-
-  .map-stage {
-    grid-template-columns: 1fr;
-  }
-
-  .map-stage iframe {
-    min-height: 340px;
-  }
-
-  .map-events {
-    max-height: none;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 720px) {
   .hero {
     min-height: 580px;
@@ -347,19 +279,11 @@ main {
   .topnav {
     justify-content: flex-start;
     overflow-x: auto;
+    margin-bottom: 110px;
   }
 
-  .section-head,
   .day-head {
     display: grid;
-  }
-
-  .map-events {
-    grid-template-columns: 1fr;
-  }
-
-  .map-stage iframe {
-    min-height: 280px;
   }
 
   .timeline li {
