@@ -252,33 +252,6 @@ main {
     var(--paper);
 }
 
-.day-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(230px, 320px);
-  gap: 18px;
-  align-items: start;
-}
-
-.photo-strip {
-  display: grid;
-  gap: 10px;
-}
-
-.photo-strip img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border: 1px solid rgba(222, 212, 196, 0.8);
-  border-radius: 8px;
-  object-fit: cover;
-  background: var(--paper-soft);
-  box-shadow: 0 10px 24px rgba(46, 37, 25, 0.08);
-}
-
-.photo-strip img:first-child {
-  aspect-ratio: 16 / 10;
-}
-
 .timeline {
   display: grid;
   gap: 0;
@@ -363,14 +336,6 @@ main {
     max-height: none;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .day-body {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-strip {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 720px) {
@@ -390,10 +355,6 @@ main {
   }
 
   .map-events {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-strip {
     grid-template-columns: 1fr;
   }
 
